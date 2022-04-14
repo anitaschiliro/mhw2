@@ -1,0 +1,90 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+.choice-grid{
+ display: flex;
+ flex-wrap: wrap; 
+ align-items: space-between;
+ justify-self: space-between;
+ width: auto;
+ height: auto;  
+}
+
+.choice-grid div{
+    margin-bottom: 20px;
+    width: 32.5%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    border: 1px solid #dcdcdc;
+    flex-direction: column;
+}
+
+.choice-grid div img{
+    width: 100%;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+}
+
+.question-name {
+    background-image: url("img-greys/background.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+button{
+    background-color: #cecece;
+    height: 50px;
+    width: 100%;
+}
+
+button:hover{
+    background-color: #e0e0e0;
+}
+
+@media (max-width:700px){
+    article{
+        width: 95%;
+    }
+    article header span{
+        display: none;
+    }
+    .question-name h1{
+        font-size: 2em;
+    }
+}
+
+@media (max-width:500px){
+    .choice-grid div{
+        width:49%;
+    }
+
+}
+
+.notSelected{
+ background-color: #f4f4f4; ;
+}
+
+.checked{
+    background-color: #cfe3ff;
+}
+
+.unchecked{
+    opacity: 0.6;
+}
+
+.hidden{
+    display: none;
+}
+
+#results {
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#results p{
+margin: 18px 0px;
+}
